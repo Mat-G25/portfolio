@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Matheus G.</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+</head>
+
+<body class="bg-black text-white">
+  <header class="p-8 text-center" data-aos="fade-down">
+    <div class="flex flex-col md:flex-row justify-center items-center">
+      <img src="/imgs/eu.jpg" class="rounded-full w-32 h-32 md:w-32 md:h-32 md:relative icon" alt="icon" data-aos="flip-left">
+      <h1 class="text-3xl md:text-5xl text-purple-400 mb-6 fade-in ml-0">Matheus Guimarães da Silva</h1>
+    </div>
+    <nav>
+      <ul class="flex flex-wrap justify-center gap-4 md:gap-6">
+        <li><a href="#sobre" class="hover:text-purple-400 transition duration-300">Sobre</a></li>
+        <li><a href="#habilidades" class="hover:text-purple-400 transition duration-300">Habilidades</a></li>
+        <li><a href="#projetos" class="hover:text-purple-400 transition duration-300">Projetos</a></li>
+        <li><a href="#contato" class="hover:text-purple-400 transition duration-300">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container mx-auto p-4">
+    <section id="sobre" class="mb-16 text-center" data-aos="fade-up">
+      <h2 class="section-title text-purple-400 text-2xl md:text-3xl">Sobre Mim</h2>
+      <p class="fade-in text-base md:text-lg">
+        Sou um desenvolvedor front-end com experiência em JavaScript, React, TailwindCSS e SEO, cursando Análise e Desenvolvimento de Sistemas.
+      </p>
+    </section>
+
+    <section id="habilidades" class="skills mb-16" data-aos="fade-up">
+      <h2 class="section-title text-center text-purple-400 text-2xl md:text-3xl">Habilidades</h2>
+      <div class="flex flex-wrap justify-around gap-8">
+        <div class="text-center">
+          <img src="/imgs/jsicon.png" alt="JavaScript" class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4" data-aos="zoom-in" />
+          <span class="block text-lg md:text-xl text-purple-400">JS</span>
+        </div>
+        <div class="text-center">
+          <img src="/imgs/reactlogo.webp" alt="React" class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4" data-aos="zoom-in" />
+          <span class="block text-lg md:text-xl text-purple-400">React</span>
+        </div>
+        <div class="text-center">
+          <img src="/imgs/tailwindicon.png" alt="TailwindCSS" class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4" data-aos="zoom-in" />
+          <span class="block text-lg md:text-xl text-purple-400">Tailwind</span>
+        </div>
+        <div class="text-center">
+          <img src="/imgs/seoicon.webp" alt="SEO" class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4" data-aos="zoom-in" />
+          <span class="block text-lg md:text-xl text-purple-400">SEO</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="projects mb-16" data-aos="fade-up">
+      <h2 class="section-title text-center text-purple-400 text-2xl md:text-3xl">Projetos</h2>
+      <ul class="flex flex-col items-center space-y-4">
+        <li><a href="https://github.com/seuusuario/todo-app" class="hover:text-purple-400 transition duration-300 text-base md:text-lg">To-Do List App</a></li>
+        <li><a href="https://github.com/seuusuario/blog-pessoal" class="hover:text-purple-400 transition duration-300 text-base md:text-lg">Blog Pessoal</a></li>
+        <li><a href="https://github.com/seuusuario/calculadora" class="hover:text-purple-400 transition duration-300 text-base md:text-lg">Calculadora</a></li>
+        <li><a href="https://github.com/seuusuario/portfolio" class="hover:text-purple-400 transition duration-300 text-base md:text-lg">Portfólio Responsivo</a></li>
+        <li><a href="https://github.com/seuusuario/landing-page" class="hover:text-purple-400 transition duration-300 text-base md:text-lg">Site de Marketing</a></li>
+      </ul>
+    </section>
+
+    <section id="contato" class="contact text-center" data-aos="fade-up">
+      <h2 class="section-title text-purple-400 text-2xl md:text-3xl">Contato</h2>
+      <ul class="flex flex-col items-center space-y-4">
+        <li><a href="https://www.linkedin.com/in/seuusuario" class="hover:text-purple-400 transition duration-300 text-base md:text-lg">LinkedIn</a></li>
+        <li><a href="https://github.com/seuusuario" class="hover:text-purple-400 transition duration-300 text-base md:text-lg">GitHub</a></li>
+        <li><a href="mailto:seuemail@exemplo.com" class="hover:text-purple-400 transition duration-300 text-base md:text-lg">Email</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="text-center p-6 bg-black">
+    <p>&copy; 2023 Matheus Guimarães da Silva. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

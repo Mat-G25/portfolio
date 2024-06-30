@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Basic Styling */
+body {
+  background: linear-gradient(to right, #000000, #200035);
+  color: #fff;
+  font-family: "Arvo", serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  color: #a29bfe;
+}
+
+/* Image Styling */
+img {
+  width: 8rem;
+  height: 8rem;
+}
+
+/* Navigation Styling */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #a29bfe;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Section Styling */
+.skills, .projects, .contact {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.projects ul, .contact ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+header {
+  background-size: cover;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.flex .icon {
+  margin-right: 1rem;
+  transition: transform 0.3s;
+}
+
+.flex .icon:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  padding: 1rem 0;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.section-title {
+  position: relative;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background: #a855f7;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .skills, .projects, .contact {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  footer {
+    padding: 0.5rem 0;
+  }
+
+  .flex .icon {
+    margin-right: 0.5rem;
+  }
+}
